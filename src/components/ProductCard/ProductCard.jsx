@@ -10,7 +10,7 @@ export default function ProductCard(props) {
     return (
         <div
             id="card"
-            className="w-full sm:w-[90%] md:w-[45%] lg:w-[250px] flex flex-col justify-between gap-y-4 sm:gap-y-6 bg-white rounded-md p-4 sm:p-5 poppins text-[12px]">
+            className="w-full sm:w-[90%] md:w-[45%] lg:w-[250px] flex flex-col justify-between gap-y-4 sm:gap-y-6 bg-white rounded-md p-4 sm:p-5 poppins text-[12px] shadow-2xl">
             <img className="w-full h-[180px] sm:h-[200px] p-2 object-contain bg-neutral-300 rounded mx-auto"
                 src={props.image}
                 alt={props.title}

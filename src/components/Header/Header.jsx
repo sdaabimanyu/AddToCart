@@ -9,7 +9,7 @@ import React from 'react'
 
 export default function Header(props) {
     return (
-        <header className='flex justify-between items-center px-4 sm:px-10 sm:p-10 bg-neutral-300 h-[70px]  m-[10px] rounded-lg audiowide-regular'>
+        <header className='flex justify-between items-center px-4 sm:px-10 sm:p-10 bg-orange-50 shadow-2xl h-[70px]  m-[10px] rounded-lg audiowide-regular'>
             <div id="logo&name" className="text-[14px] flex items-center gap-x-10">
                 <img className="h-[50px] hidden md:block" src=".\src\assets\logo1.png" alt="" />
                 <h3 className=' font-bold text-[18px]'>Modal Shop</h3>
@@ -21,12 +21,13 @@ export default function Header(props) {
                 <a className="cursor-pointer hover:underline">About</a>
                 <a className="cursor-pointer hover:underline">Contact</a>
             </div>
-            <div id="cart" className="relative w-[30px] h-[50px] flex items-center mr-2 p-3 cursor-pointer hover:underline">
-                <button onClick={props.openCart}>
-                    <i className="fa-solid fa-cart-shopping text-2xl cursor-pointer hover:underline"></i>
+            <div id="cart" onClick={props.openCart} className="w-[100px] h-[50px] shadow-xl bg-white rounded p-1 cursor-pointer relative">
+                <button className='w-full h-full flex justify-center items-center gap-x-2 cursor-pointer '>
+                    <h1 className='text-[20px]'>Cart</h1>
+                    <i class="fa-solid fa-cart-shopping text-2xl cursor-pointer"></i>
                 </button>
-                <div className="w-[14px]  h-[14px] bg-white rounded-full absolute  top-[5px] right-[-15px] flex justify-center items-center ">
-                    <p className="text-[9px] text-center font-bold ">{props.cartCount}</p>
+                <div className="w-[23px]  h-[23px] bg-black text-white rounded-full absolute  top-[-10px] right-[-10px] flex justify-center items-center ">
+                    <p className="text-[11px] text-center font-[30px] poppins">{props.cartCount}</p>
                 </div>
             </div>
         </header>

@@ -66,7 +66,7 @@ function App() {
             openCart={() => setShowModal(true)}
           />
           {/* Product List */}
-          <div id="products" className="bg-neutral-300 min-h-screen gap-6 m-2 sm:m-3 rounded-md p-6 sm:p-6 md:10 flex justify-center md:justify-evenly gap-y-10  flex-wrap">
+          <div id="products" className="bg-orange-50 shadow-2xl min-h-screen gap-6 m-2 sm:m-3 rounded-md p-6 sm:p-6 md:10 flex justify-center md:justify-evenly gap-y-10  flex-wrap">
             {product.map((el) =>
               <ProductCard
                 key={el.id}
