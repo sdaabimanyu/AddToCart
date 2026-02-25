@@ -21,12 +21,12 @@ export default function Header(props) {
                 <a className="cursor-pointer hover:underline">About</a>
                 <a className="cursor-pointer hover:underline">Contact</a>
             </div>
-            <div id="cart" onClick={props.openCart} className="w-[100px] h-[50px] shadow-xl bg-white rounded p-1 cursor-pointer relative hover:border-3">
+            <div id="cart" onClick={props.openCart} className="w-[100px] h-[50px] shadow-xl bg-black text-white rounded p-1 cursor-pointer relative hover:border-3">
                 <button className='w-full h-full flex justify-center items-center gap-x-2 cursor-pointer '>
                     <h1 className='text-[20px]'>Cart</h1>
                     <i class="fa-solid fa-cart-shopping text-2xl cursor-pointer"></i>
                 </button>
-                <div className="w-[23px]  h-[23px] bg-black text-white rounded-full absolute  top-[-10px] right-[-10px] flex justify-center items-center ">
+                <div className="w-[23px]  h-[23px] bg-black text-white rounded-full absolute border-2 border-white  top-[-10px] right-[-10px] flex justify-center items-center ">
                     <p className="text-[11px] text-center font-[30px] poppins">{props.cartCount}</p>
                 </div>
             </div>
