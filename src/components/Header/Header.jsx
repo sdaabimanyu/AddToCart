@@ -21,7 +21,7 @@ export default function Header(props) {
                 <a className="cursor-pointer hover:underline">About</a>
                 <a className="cursor-pointer hover:underline">Contact</a>
             </div>
-            <div id="cart" onClick={props.openCart} className="w-[100px] h-[50px] shadow-xl bg-white rounded p-1 cursor-pointer relative">
+            <div id="cart" onClick={props.openCart} className="w-[100px] h-[50px] shadow-xl bg-white rounded p-1 cursor-pointer relative hover:border-3">
                 <button className='w-full h-full flex justify-center items-center gap-x-2 cursor-pointer '>
                     <h1 className='text-[20px]'>Cart</h1>
                     <i class="fa-solid fa-cart-shopping text-2xl cursor-pointer"></i>
