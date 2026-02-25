@@ -31,12 +31,17 @@ export default function CartModal(props) {
                                     <div className="flex flex-col gap-y-6 p-2 w-[70%]">
                                         <h4 className="leading-5">{item.title} </h4>
                                         <p className="text-[10px] leading-5 line-clamp-2">{item.description}</p>
-                                        <div className='flex justify-between items-center'>
-                                            <h3 className="text-xl font-bold mb-3">${item.price} </h3>
-                                            <i
-                                                className="fa-solid fa-trash absolute bottom-[15px] right-[10px]  cursor-pointer"
+                                        <div className="flex justify-between items-center w-full mt-2">
+                                            <h3 className="text-xl font-bold">
+                                                ${item.price}
+                                            </h3>
+
+                                            <button
                                                 onClick={() => props.removeFromCart(item.id)}
-                                            ></i>
+                                                className="flex items-center gap-2 text-red-500 text-sm font-medium bg-white h-[30px] p-2  rounded cursor-pointer">
+                                                <i className="fa-solid fa-trash"></i>
+                                                Remove From Cart
+                                            </button>
                                         </div>
 
                                     </div>
@@ -52,18 +57,6 @@ export default function CartModal(props) {
                             <div id="subtotal" className="flex justify-between">
                                 <p>Sub Total</p>
                                 <p>${subTotal.toFixed(2)}</p>
-                            </div>
-                            <div id="discount" className="flex justify-between">
-                                <p>Discount</p>
-                                <p>$0.00</p>
-                            </div>
-                            <div id="tax" className="flex justify-between">
-                                <p>Tax</p>
-                                <p>$0.00</p>
-                            </div>
-                            <div id="Shipping" className="flex justify-between">
-                                <p>Shipping</p>
-                                <p>Free</p>
                             </div>
                             <div id="Total" className="flex justify-between mb-5">
                                 <p>Total</p>
