@@ -10,7 +10,7 @@ import React from 'react'
 export default function Header(props) {
     return (
         <header className='flex justify-between items-center px-4 sm:px-10 sm:p-10 bg-orange-50 shadow-2xl h-[70px]  m-[10px] rounded-lg audiowide-regular'>
-            <div id="logo&name" className="text-[14px] flex items-center gap-x-10">
+            <div id="logo&name" className="text-[14px] flex items-center gap-x-3">
                 <img className="h-[50px] hidden md:block" src=".\src\assets\logo1.png" alt="" />
                 <h3 className=' font-bold text-[18px]'>Modal Shop</h3>
             </div>
