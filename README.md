@@ -1,16 +1,41 @@
-# React + Vite
+# Add to Cart Using Modal – ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This project is a ReactJS application that fetches product data from the Fake Store API and allows users to add products to a shopping cart using a modal interface.
 
-Currently, two official plugins are available:
+The application demonstrates core React concepts such as state management, props, conditional rendering, and component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fetches products from the Fake Store API
+- Displays products in a responsive card layout
+- Add products to cart functionality
+- Prevents duplicate items in the cart with an alert message
+- Displays cart item count in the navigation bar
+- Cart modal to view added products
+- Remove items from the cart
+- Fully responsive design for desktop and mobile
 
-## React Compiler
+## Technologies Used
+- ReactJS
+- Tailwind CSS
+- JavaScript (ES6)
+- Fake Store API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## API Used
+https://fakestoreapi.com/products
 
-## Expanding the ESLint configuration
+## How to Run the Project
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Start the development server using `npm run dev`
+4. Open the browser and navigate to `http://localhost:5173`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Folder Structure
+- `components/` – Reusable UI components
+- `App.jsx` – Main application logic
+- `CartModal.jsx` – Modal cart implementation
+- `ProductCard.jsx` – Product display component
+- `Header.jsx` – Navigation bar with cart count
+
+## Author
+Developed as part of a ReactJS Add to Cart Modal task.
