@@ -40,7 +40,7 @@ export default function CartModal(props) {
                                                 onClick={() => props.removeFromCart(item.id)}
                                                 className="flex items-center gap-2 text-white text-sm font-medium bg-black h-[30px] p-2  rounded cursor-pointer">
                                                 <i className="fa-solid fa-trash"></i>
-                                                Remove From Cart
+                                                <p className='text-[12px] lg:text-[14px] hidden lg:block '>Remove From Cart</p>
                                             </button>
                                         </div>
 
